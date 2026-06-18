@@ -130,14 +130,14 @@ export default function HeroSection() {
                     <motion.span variants={wordVariant} style={{ display: "inline-block" }}>
                         YOUR PLACE
                     </motion.span>
-
+                    <br />
                     <motion.span
                         variants={wordVariant}
                         className="muted"
                         style={{ display: "inline-block" }}>
                         FOR COFFEE
                     </motion.span>
-
+                    <br />
                     <motion.span variants={wordVariant} style={{ display: "inline-block" }}>
                         BREWING
                     </motion.span>
@@ -178,14 +178,14 @@ export default function HeroSection() {
                     </Button>
                 </motion.div>
 
-                {/*Trust Indicators  */}
+                {/* Trust Indicators */}
                 <motion.div
                     className="hero-trust"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 1.1 }}>
                     <span>★★★★★ 4.9/5 from 2,400+ customers</span>
-                    <span className="hero-trust-divider"></span>
+                    <span className="hero-trust-divider">|</span>
                     <span>Free shipping over $50</span>
                 </motion.div>
             </div>
@@ -206,7 +206,8 @@ export default function HeroSection() {
                     transition={{ duration: 1.2, ease: [0.25, 0.46, 0.45, 0.94] }}
                 />
             </div>
-            {/* Floating Price Badge */}
+
+            {/* Floating price badge */}
             <motion.div
                 className="hero-floating-badge"
                 initial={{ opacity: 0, scale: 0.5 }}
