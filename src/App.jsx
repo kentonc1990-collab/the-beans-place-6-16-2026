@@ -53,6 +53,7 @@
 // for the navigation links in the NavBar.
 
 /* --- YOUR COMPONENT CODE GOES HERE --- */
+import ContactForm from "./components/ContactSection";
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 
@@ -61,7 +62,7 @@ export default function App() {
         <div className="app">
             {/* NAVBAR */}
             <NavBar />
-           
+
             {/* HERO */}
             <section className="hero bg-hero">
                 <div className="hero-grid">
@@ -78,6 +79,9 @@ export default function App() {
             {/* ABOUT */}
 
             {/* CONTACT */}
+            <section className="bg-cta" id="contact">
+                <ContactForm />
+            </section>
 
             {/* FOOTER */}
         </div>
